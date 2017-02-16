@@ -295,16 +295,29 @@ h1,h2,h3 {
 	background-color: #fff;
 }
 
-.btn-primary,.label-primary,.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus  {
-	background-color:#3B5999;
-    color:#fffffe;
+.btn-primary {
+  color: #666;
+  border-color: transparent;
+  background-color: #DEDEDE;
+}
+
+#feedbackSubmit,.btn-primary.active, .btn-primary:hover, .btn-primary.active:hover, .btn-primary.active:focus,  .list-group-item.active:focus, .btn-primary:active, .btn-primary:focus, .btn-primary:active:focus, .btn-primary:active:hover {
+  color: #fff;
+  background-color: #f7ad41;
+  border-color: transparent;
+}
+
+.btn-primary,.label-primary,.list-group-item.active, .list-group-item.active:hover{
+	background-color: transparent;
 }
 .btn-default {
     color:#666666;
     text-shadow:0 0 1px rgba(0,0,0,.3);
 }
-.form-control {
-
+.form-control:focus {
+  border-color: #f7ad41;
+  box-shadow: inset 0 1px 1px #f7ad41, 0 0 8px #f7ad41;
+  }
 }
 
 .panel textarea, .well textarea, textarea.form-control
