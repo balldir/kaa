@@ -13,14 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+FEEDBACK_FORM_SELECTOR="#feedbackForm"
+FEEDBACK_SUBMIT_BUTTON_SELECTOR="#feedbackSubmit"
+FEEDBACK_RESULT_SELECTOR="#feedbackResult"
+FEEDBACK_INPUT_FORM_SELECTOR='#feedbackAsk'
+FEEDBACK_ANIMATION_TIME=500
+
 
 $(document).ready(function(){
   /* Check cache and show feedback field if necessary*/
-  $("#feedbackForm").show(0);
+  $(FEEDBACK_FORM_SELECTOR).show();
 
-  $("#feedbackSubmit").click(function(){
+  $(FEEDBACK_SUBMIT_BUTTON_SELECTOR).click(function(){
     /* Check cache and show feedback field if necessary */
-    $('#feedbackAsk').hide(500);
-    $('#feedbackResult').show(500);
+    $(FEEDBACK_INPUT_FORM_SELECTOR).hide(FEEDBACK_ANIMATION_TIME);
+    $(FEEDBACK_RESULT_SELECTOR).show(FEEDBACK_ANIMATION_TIME);
   })
 })
