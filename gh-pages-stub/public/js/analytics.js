@@ -24,14 +24,16 @@ var Analytic = (function () {
     }
 
     function sendFeedback(feedbackType,kaa_version,page,email,feedback) {
-      fullFeedback = "Version: {0}\nPage: {1}\nemail: {3}\nFeedback: {4}".format(kaa_version, page, email, feedback);
+      fullFeedback = "Version:" + kaa_version +"\nPage:" + page + "\nemail:" +
+                      email + "\nFeedback:" + feedback;
       console.log(fullFeedback);
-      ga('send', {
-        hitType: 'event',
-        eventCategory: 'Feedback',
-        eventAction: feedbackType,
-        eventLabel: fullFeedback
-      });
+      console.log(feedbackType);
+      // ga('send', {
+      //   hitType: 'event',
+      //   eventCategory: 'Feedback',
+      //   eventAction: feedbackType,
+      //   eventLabel: fullFeedback
+      // });
     }
 
     return {

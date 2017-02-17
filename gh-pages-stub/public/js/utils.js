@@ -60,6 +60,10 @@ var UTILS = (function () {
 		return "";
 	}
 
+	my.getPathname = function getPathname() {
+		return window.location.pathname;
+	}
+
 	my.getLatestVersion = function getLatestVersion() {
 		return DOM.getInstance().getDataParam(SCRIPT_ID, DATA_LATEST_VERSION);
 	}
