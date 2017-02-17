@@ -295,16 +295,21 @@ h1,h2,h3 {
 	background-color: #fff;
 }
 
+.btn {
+  padding: 6px 4px;
+}
+
 .btn-primary {
   color: #666;
   border-color: transparent;
   background-color: #DEDEDE;
 }
 
-#feedbackSubmit,.btn-primary.active, .btn-primary:hover, .btn-primary.active:hover, .btn-primary.active:focus,  .list-group-item.active:focus, .btn-primary:active, .btn-primary:focus, .btn-primary:active:focus, .btn-primary:active:hover {
+#feedbackSubmit, #btnShowfeedbackForm, .btn-primary.active, .btn-primary:hover, .btn-primary.active:hover, .btn-primary.active:focus,  .list-group-item.active:focus, .btn-primary:active, .btn-primary:focus, .btn-primary:active:focus, .btn-primary:active:hover {
   color: #fff;
   background-color: #f7ad41;
   border-color: transparent;
+  text-align: center;
 }
 
 .btn-primary,.label-primary,.list-group-item.active, .list-group-item.active:hover{
@@ -2342,7 +2347,7 @@ pre, .signature-nav>li>a {
   font-size: 1.5em;
   font-weight: bold;
   text-decoration: none;
-  background: transparent url('{{ site.baseurl }}/images/rest-api/logo_small.png) no-repeat left center;
+  background: transparent url('{{ site.baseurl }}/images/rest-api/logo_small.png') no-repeat left center;
   padding: 20px 0 20px 40px;
   color: white;
 }
@@ -2434,4 +2439,23 @@ pre, .signature-nav>li>a {
 	font-size: 16px;
 }
 /* custom end */
+#btnShowfeedbackForm{
+  position: fixed;
+  right: 0px;
+  bottom: 35px;
+  z-index: 1060;
+  transform: rotate(-90deg);
+  transform-origin: right, top;
+  -ms-transform: rotate(-90deg);
+  -ms-transform-origin:right, top;
+  -webkit-transform: rotate(-90deg);
+  -webkit-transform-origin:right, top;
+}
+
+.popover {
+  position: fixed;
+  max-width: 300px;
+  text-align: center;
+}
+
 /* rest api */
